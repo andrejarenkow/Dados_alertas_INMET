@@ -12,6 +12,6 @@ conn = sqlitecloud.connect('sqlitecloud://cajzrljjsz.sqlite.cloud:8860?apikey=JV
 db_name = 'bd_alertas.sqlite'
 conn.execute(f'USE DATABASE {db_name}')
 
-dados = pd.read_sql('SELECT * FROM alertas WHERE Rio_Grande_do_sul > 0 LIMIT 20', conn)
+dados = pd.read_sql('SELECT * FROM alertas WHERE Rio_Grande_do_Sul > 0 LIMIT 20', conn)
 
 dados
